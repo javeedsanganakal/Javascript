@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title> 
+  </head>
+  <body>
+      <form name="myForm">
+        <label>Enter your Input : </label>
+        <input type="text" name="myInput"/>
+        <button onclick="displayInput()">Click Me</button>
+      </form>   
+    <script>
+        function displayInput(){
+            alert(document.myForm.myInput.value);
+        }  
+    </script>
+  </body>
+</html>
+
+
+
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform">
+        <label>enter input</label>
+        <input type="text" name="myinput" value="">
+        <button onclick="myfun()">clickme</button>
+    </form>
+    <script>
+            function myfun(){
+            var x = document.myform.myinput.value;
+            alert(x);
+      }
+    </script>
+</body>
+</html> -->

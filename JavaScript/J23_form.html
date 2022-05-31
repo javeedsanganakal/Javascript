@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title> 
+  </head>
+  <body>
+
+    <form onsubmit="auth()">
+        <h3>Login Page</h3>
+      <label>Username</label>
+      <!-- <p>When you enter the input field, a function is triggered which sets the background color to yellow.
+        When you leave the input field, a function is triggered which sets the background color to red.</p> -->
+      <input type="text" name="username" id="usernameId" onfocus="focusBg()"/><br/><br/>
+      <label>Password</label>
+      <input type="password" name="password" id="passwordId"  onblur="changeBg()"/><br/><br/>
+      <input type="submit" value="Login"/>
+    </form>
+    <hr>
+    <script>  
+    function auth(){
+        var username = document.getElementById("usernameId").value;
+        var password =  document.getElementById("passwordId").value;
+
+        if(username === "sckjaveed" && password === "12345")
+        {
+            alert(username + "  Successfully Logined");
+        }
+        else{
+            alert("Logined Failed");
+        }
+    }
+    function focusBg()
+    {
+        document.getElementById("usernameId").style.backgroundColor = "yellow"
+    }
+    function changeBg()
+    {
+        document.getElementById("passwordId").style.backgroundColor = "red"
+    }
+    </script>
+  </body>
+</html> 
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="getData()" name="myForm">
+        <label>Username</label>
+        <br><br>
+            <input type="text" name="username" id="userId" onblur="focusBg()">
+        <br><br>
+            <label>Password</label>
+        <br><br>
+            <input type="password" name="password" id="passId" onblur="changeBg()" >
+        <br><br>
+            <input type="submit" value="Submit Data">
+    </form>
+
+    <hr>
+    
+    <script>
+        function getData() {
+            var user =  document.myForm.username.value;
+            var pass = document.myForm.password.value;
+
+            if((user === "manjunath@gmail.com") && (pass === "1234567"))
+            {
+                alert("Welcome " + user + "you have successfully login");
+            }
+            else {
+                alert("username or password not matched");
+            }
+        }
+
+
+        function changeBg() {
+            document.getElementById('passId').style.backgroundColor= "deeppink";
+        }
+
+        function focusBg() {
+            document.getElementById('userId').style.backgroundColor = "lightblue";
+        }
+    </script>
+</body>
+</html>  -->

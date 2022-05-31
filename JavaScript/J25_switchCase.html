@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form name="myForm">
+        <label>Enter your fruit : </label>
+        <input type="text" name="myInput" />
+        <button onclick="displayInput(); return false;" >Click Me</button>
+        
+    </form>
+
+    <h3 id="fruitId"></h3>
+    <script>   
+        function displayInput() {
+            var fruitName = document.myForm.myInput.value;
+            
+            switch (fruitName) {
+                case "papaya":
+                    document.getElementById("fruitId").innerHTML = "YOU ENTERED PAPAYA";
+                    break;
+
+                case "mango":
+                    document.getElementById("fruitId").innerHTML = "YOU ENTERED MANGO";
+                    break;
+
+                case "banana":
+                    document.getElementById("fruitId").innerHTML = "YOU ENTERED BANANA";
+                    break;
+                default:
+                    document.getElementById("fruitId").innerHTML = "YOUR FRUIT NOT FOUND";
+                    break;
+            }
+        }  
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var key = prompt('Enter key?');
+
+        //     switch(Number(key)){
+        //     case 1 : alert('you are in first class');//number should not be taken in 'or" because its string
+        //     break;
+        //     case 2 : alert('you are in second case');
+        //     break;
+        //     case 3 : alert('you are in third case');
+        //     break;
+        //     default: alert('check you key');
+        //     }
+
+
+            var fruit = 'papaya'
+
+switch(fruit){
+    case'papaya':
+        console.log(' the fruit is papaya');
+        break;
+    case'apple':
+        console.log(' the fruit is apple');
+        break;
+    case 'papaya':
+        console.log('the fruit is papaya 2');
+        break;
+    default:
+        console.log(' the entry is not a fruit');
+        
+}
+
+    </script>
+</body>
+</html> -->
