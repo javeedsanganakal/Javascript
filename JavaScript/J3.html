@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            #myDiv1 {
+              width: 100%;
+              height: auto;
+              padding: 20px;
+              background: #ec8144;
+              color: #000000;
+              /* color indicates it is the color of text  */
+            }
+            #myDiv2{
+            width: 100%;
+            height: auto; 
+            padding: 20px;
+            background: skyblue;
+            color: black;
+            }
+          </style>
+    </head>
+    <body>
+        <div id="myDiv1"></div>
+        <div id="myDiv2"></div>
+        <script>
+             document.write("<h2>This is my document</h2>");
+             document.getElementById("myDiv1").innerHTML = "<h1>Mohammad Javeed Sanganakal</h1>";
+             document.getElementById("myDiv2").innerHTML = "Frontend Developer";
+
+             //document.getElementById("idName").innerText = "Full Stack Development";
+        </script>
+    </body>
+</html>

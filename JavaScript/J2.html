@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- =  assigning vale
+== comparing the value
+=== comparing the value and the datatype -->
+    <script>
+      var promptInput = prompt("Enter the value: ");
+      var parseValue = Number(promptInput);
+
+      if (parseValue > 100) {
+        document.write("<h3>" + parseValue + " is greater than 100 </h3>");
+      } else if (parseValue === 100) {
+        document.write("<h3>" + parseValue + " is equal to 100 </h3>");
+      } else {
+        document.write("<h3>" + parseValue + " is lesser than 100 </h3>");
+      }
+    </script>
+  </body>
+</html>

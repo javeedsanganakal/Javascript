@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title> 
+  </head>
+  <body>
+      <h3>Javascript String Object</h3>
+    <script>
+        var studentDetails = {
+            fullName: ["Mohammad Javeed", "Sanganakal"],
+            number: "+91 9959112121",
+            email: "javeed@gmail.com",
+            
+            showDOB: function(){
+                document.write("01/01/1998");
+            }
+        }
+        document.write("Student Name: " + studentDetails.fullName + "<br>");
+        document.write("Phone Number: "+studentDetails.number + "<br>");
+        document.write("Email Id: "+studentDetails.email + "<br>");
+        studentDetails.showDOB();
+    </script>
+  </body>
+</html>

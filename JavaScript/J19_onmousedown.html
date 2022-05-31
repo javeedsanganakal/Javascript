@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 onmousedown="showText()" id="txt">Mouse over below the text.</h1>
+    <script>
+      function showText() {
+        document.getElementById("txt").innerHTML = "Loading Please wait...";
+        setTimeout(function () {
+          alert("Hello Buddy!!!! Mouse over down");
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>

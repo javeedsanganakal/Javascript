@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>  
+    <h2>Mouse Over</h2>
+    <h1 onmouseover="calmeth1()" id="txt">Mouse over on me</h1>
+
+
+    <script>
+        function calmeth1() {
+
+            document.getElementById("txt").innerHTML = "Loading Please wait...";
+            x=function(){
+                alert("Mouse Over");
+                        }
+            setTimeout(x,3000);
+        }
+    </script>
+</body>
+</html>

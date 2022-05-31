@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Reading data from input using Dom element</h1>
+
+    <form id="formId" name="myform">
+      <label>Enter the Mobile number</label>
+      <br /><br />
+      <input type="text" id="inputId" name="myinput" value="+91 " />
+      <br /><br />
+      <input type="button" value="click me" onclick="myfun()" />
+    </form>
+    <script>
+      function myfun() {
+        // var x = document.myform.myinput.value;
+        var x = document.getElementById("inputId").value;
+        alert("Your phone number is" + x);
+
+        var clearText = function () {
+          document.getElementById("inputId").value = "+91";
+        };
+        setTimeout(clearText, 2000);
+      }
+    </script>
+  </body>
+</html>
