@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Properties</h2>
+
+<p>The length property returns the length of a string:</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "MohammadJaveedSanganakal";
+document.getElementById("demo").innerHTML = text.length;
+
+
+// Extracting String Parts
+// There are 3 methods for extracting a part of a string:
+// slice(start, end)
+// substring(start, end)
+// substr(start, length)
+
+//slice() extracts a part of a string and returns the extracted part in a new string.
+let str = "Apple, Papaya, Kiwi";
+let part = str.slice(7, 13);
+document.write("<br><br>"+part);
+//If a parameter is negative, the position is counted from the end of the string.
+let str1 = "Apple, Banana, Kiwi";
+document.getElementById("demo").innerHTML = str1.slice(-12,-6);
+let part1 = str.slice(7);
+document.write("<br><br> 7 to end  slice => "+part1); 
+let part2 = str.slice(-12);
+document.write("<br><br> -12 to end  slice => " +part2);
+
+
+// JavaScript String substring()
+//The difference btwn slice and substring is that start and end values less than 0 are treated as 0 in substring().
+let subStringStr = "Apple, Banana, Kiwi";
+let subStringValue = subStringStr.substring(7, 13);
+// let subStringValue = subStringStr.substring(7);
+// let subStringValue = subStringStr.substring(-12, -6);
+document.write("<br><br> substring =>  "+ subStringValue);
+
+
+// substr() is similar to slice().
+// The difference is that the second parameter specifies the length of the extracted part.
+let item1 = "Apple, Banana, Kiwi";
+// let val1 = item1.substr(7,6) // starting index and length of the string we need to extract;
+let val1 = item1.substr(7)
+document.write("<br><br> sub str =>   "+ val1);
+
+
+//replace method
+let item2 = "Please visit Microsoft and Microsoft!";
+let val2 = item2.replace("Microsoft", "Javeed Office");
+document.write("<br><br> repalce method => "+ val2);
+
+// By default, the replace() method is case sensitive. Writing MICROSOFT (with upper-case) will not work:
+// let val2 = item2.replace("MICROSOFT", "Javeed Office");
+// let val2 = item2.replace(/MICROSOFT/i, "Javeed Office");
+
+//replace all
+// let item2 = "Please visit Microsoft and Microsoft!";
+// let val2 = item.replace(/Microsoft/g, "Javeed Sanganakal");
+
+// let text1 = "Hello World!";
+// let text2 = text1.toUpperCase();
+
+// A string is converted to upper case with toUpperCase():
+// A string is converted to lower case with toLowerCase():
+
+
+let name = "MOHAMMAD JAVEED";
+let toLower = name.toLowerCase();
+document.write("<br><br> toLowerCase method => "+toLower);
+
+let name1 = "sanganakal";
+let toUpper = name1.toUpperCase();
+document.write("<br><br> toUpperCase method => "+toUpper);
+
+
+let cText1 = "Hello";
+let cText2 = "World!!!";
+let cText3 = cText1.concat(" ",cText2);
+// let cText3 = "Hello"+ " " + "World!!!";  //instead of + 
+
+document.write("<br><br> concat method => "+cText3);
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
