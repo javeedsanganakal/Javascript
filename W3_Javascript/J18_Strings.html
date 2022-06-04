@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title> 
+  </head>
+  <body>
+    <script>
+
+// JavaScript strings are for storing and manipulating/operate text.
+let carName1 = "Volvo XC60";  // Double quotes
+let carName2 = 'Volvo XC60';  // Single quotes
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = text.length;
+
+// let text = "We are the so-called "Vikings" from the north."; 
+let text = "We are the so-called 'Vikings' from the north."; // or
+
+let text = "We are the so-called \"Vikings\" from the north."; // "We are the so-called "Vikings" from the north."
+let text= 'It\'s alright.'; //'It's alright.';
+let text = "The character \\ is called backslash."; //"The character \ is called backslash.";
+
+
+// You can also break up a code line within a text string with a single backslash:
+
+document.getElementById("demo").innerHTML = "Hello " +
+"Dolly!"; // or 
+
+document.getElementById("demo").innerHTML = "Hello \
+Dolly!";
+
+
+
+// JavaScript Strings as Objects
+
+//Normally, JavaScript strings are primitive values
+//In JavaScript, a primitive (primitive value, primitive data type) is data that is not an object and has no methods or properties.
+
+
+let nameStr = "Javeed";
+
+//But strings can also be defined as objects with the keyword new:
+let nameObj =  new String("Javeed");
+
+document.write("<br><br> type of string and Object " + typeof nameObj == typeof nameStr); 
+    </script>
+  </body>
+</html>
+
