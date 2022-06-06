@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+const companies = [
+            { name: "jackwilliam", company: "ocwen outsourcing", startdate: "12/12/2021", endDate: "13/14/2022" },
+            { name: "john", company: "ocwen outsourcinga", startdate: "12/12/2019", endDate: 13 / 14 / 2023 },
+            { name: "jackwilliam", company: "ocwen outsourcings", startdate: "12/12/2018", endDate: 13 / 14 / 2024 },
+            { name: "johns", company: "ocwen outsourcingd", startdate: "12/12/2017", endDate: 13 / 14 / 2025 },
+            { name: "jackwilliam", company: "ocwen outsourcingf", startdate: "12/12/2016", endDate: "13/14/2026" },
+            { name: "jackwilliam", company: "ocwen outsourcingg", startdate: '12/12/2021', endDate: "13/14/2027" },
+            { name: "jackwilliam", company: "ocwen outsourcingh", startdate: 12 / 12 / 2021, endDate: "13/14/2028" },
+            { name: "jackwilliam", company: "ocwen outsourcingh", startdate: 12 / 12 / 2021, endDate: "13/14/2029" },
+            { name: "john", company: "ocwen outsourcingj", startdate: '12/12/2021', endDate: 13 / 14 / 20220 },
+            { name: "jackwilliam", company: "ocwen outsourcingj", startdate: 12 / 12 / 2021, endDate: 13 / 14 / 2022100 },
+            { name: "jackwilliam", company: "ocwen outsourcingk", startdate: 12 / 12 / 2021, endDate: 13 / 14 / 202223 },
+            { name: "john", company: "ocwen outsourcingp", startdate: 12 / 12 / 2021, endDate: 13 / 14 / 202256 },
+            { name: "jackwilliam", company: "ocwen outsourcingo", startdate: 12 / 12 / 2021, endDate: 13 / 14 / 202212 },
+            { name: "john", company: "ocwen outsourcinig", startdate: 12 / 12 / 2021, endDate: 13 / 14 / 202245 },
+        ];
+
+        const ages = [33, 22, 11, 44, 55, 66, 44, 77, 88, 99, 77, 75, 24, 56, 14, 23, 67, 55];
+
+
+
+let validVoters = [];
+
+for (i=0; i < ages.length; i++){
+    if(ages[i] >= 18){
+        validVoters.push(ages[i]);
+    }
+}
+
+document.write("<br><br> Filter by using Forloop =>"  + validVoters);
+
+// let filterValidVoters = ages.filter(function(ageNum){
+//     if(ageNum >=18){
+//         return true;
+//     }
+// })
+
+
+let filterValidVoters = ages.filter(ageNum => ageNum >= 18);
+
+document.write("<br><br> filter method instead of Forloop =>"  + filterValidVoters);
+
+
+// const filterJohn = companies.filter( function(x) {
+//     if(x.name === "John"){
+//         return true;
+//     }
+// })
+
+const filterJohn = companies.filter( x =>  x.name === "john");
+console.log("filter method to find John name by using Arrow function  =>");
+console.log(filterJohn);
+
+document.write("<br><br> filter method to find 'john' name by using Arrow function  =>"  + filterJohn);
+
+
+// const filterComName = companies.filter(function(x){
+//     if(x.company === "ocwen outsourcingf"){
+//         return true;
+//     }
+// });
+
+const filterComName = companies.filter( x => x.company === "ocwen outsourcingf");
+
+console.log("filter method to find 'ocwen outsourcingf' company name by using Arrow function  =>");
+console.log(filterComName);
+document.write("<br><br> filter method to find 'ocwen outsourcingf' company name by using Arrow function  =>"  + filterComName);
+
+
+
+
+// const filterStartDate = companies.filter(function(x){
+//     if(x.startdate === "12/12/2016"){
+//         return true;
+//     }
+// });
+
+const filterEndDate = companies.filter( x => x.endDate === "13/14/2026");
+
+console.log("filter method to find '13/14/2026' end date by using Arrow function  =>");
+console.log(filterEndDate);
+document.write("<br><br> filter method to find '13/14/2026' end date by using Arrow function  => " + filterEndDate);
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
+
+
+<!-- 
+//--------------------------filters------------------------------------
+
+// to find greater than the assigned value of the array
+// let canVote = [];
+// for(i=2; i<ages.length; i++) {
+//     if(ages[i]>=18){
+//         canVote.push(ages[i]);
+//     };
+// };
+// console.log(canVote);
+
+
+// let canVote = ages.filter(function(x){ 
+//     if(x>=18){ return true}
+// });
+
+// const canVote = ages.filter((age)=> age>=18);
+
+// console.log(canVote);
+
+//to segrigate the array that has name john
+//  const johnName = companies.filter(function(x){
+//      if(x.name === 'john') {
+//         return true;
+//      }
+//  });
+
+//  const johnName = companies.filter(x => x.name==='john');
+
+//  console.log(johnName);
+ 
+
+// const y = companies.filter(function(details){ 
+//     if(details.company === "ocwen outsourcingf"){ return true;}
+// });
+
+// const y = companies.filter(details=> details.company ==="ocwen outsourcingf" );
+
+// console.log(y)
+;
+
+// const x = companies.filter((y)=> y.startdate === "12/12/2016"  );
+// const x = companies.filter(function(y){if(y.startdate === "12/12/2016"){return true} });
+
+// console.log(x); -->

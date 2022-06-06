@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Numbers</title>
+</head>
+
+<body>
+    <script>
+
+        //Numbers
+        let num1 = 23.12;
+        let num2 = 23;
+
+        // Extra large or extra small numbers can be written with scientific (exponent) notation:
+        // let x = 123e5;    // 12300000
+        // let y = 123e-5;   // 0.00123
+        document.write("<br><br> JavaScript has only one type of number. Numbers can be written with or without decimals. => " + num1 + " and " + num2);
+
+
+
+
+        //Integer Precision
+        let x = 999999999999999;   // x will be 999999999999999
+        let y = 9999999999999999;  // y will be 10000000000000000
+        document.write("<br><br> Integers (numbers without a period or exponent notation) are accurate up to 15 digits =>" + x + "  and " + y);
+
+
+
+
+
+        //Floating Precision 
+
+        let floatNum = 0.2 + 0.1;
+        let r = (0.2 * 10 + 0.1 * 10) / 10; //output = 0.3
+        document.write("<br><br> Floating point arithmetic is not always 100% accurate:  0.2 + 0.1 => " + floatNum);
+
+
+
+
+
+        //Adding Numbers and Strings
+
+        // 1. JavaScript uses the + operator for both addition and concatenation.
+        // 2. Numbers are added. Strings are concatenated.
+
+        let x1 = 10;
+        let y1 = 20;
+        let z1 = x1 + y1; // 30
+
+
+
+        let x2 = "10";
+        let y2 = "20";
+        let z2 = x2 + y2; // 1020
+
+        let x3 = 10;
+        let y3 = "20";
+        let z3 = x3 + y3; //1020
+
+        //  Numeric Strings
+        // JavaScript strings can have numeric content:
+
+        let x4 = 100;         // x4 is a number
+        let y4 = "100";       // y4 is a string
+
+        // JavaScript will try to convert strings to numbers in all numeric operations: only /, - ,* not + operator
+
+        let x5 = "100";
+        let y5 = "10";
+        let z5 = x5 / y5; // 10
+
+        let x6 = "100";
+        let y6 = "10";
+        let z6 = x6 * y6; // 1000
+
+        let x7 = "100";
+        let y7 = "10";
+        let z7 = x7 - y7; //90
+
+
+        //But this will not work:
+        let x8 = "100";
+        let y8 = "10";
+        let z8 = x8 + y8; //10010
+
+
+        //NaN - Not a Number
+        // 1.Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number):
+
+        let x9 = 100 / "Apple"; //NaN
+        let x10 = 100 / "10"; //10
+
+        isNaN(x); // true
+
+        //If you use NaN in a mathematical operation, the result will also be NaN:
+        let x11 = NaN;
+        let y11 = 5;
+        let z11 = x11 + y11; //NaN
+
+        let x12 = NaN;
+        let y12 = "5";
+        let z12 = x12 + y12; //NaN5
+
+        document.write("<br><br> Tyoe of NaN => " + typeof NaN);
+
+
+        //Infinity
+        //Infinity (or -Infinity) is the value JavaScript will return if you calculate a number outside the largest possible number.
+
+        let m = 2 / 0;
+        let n = -2 / 0;
+        document.write("<br><br> Division by zero generates Infinity : 2/0 and -2/0 => ", m + " and " + n);
+
+        document.write("<br><br> typeof Infinity => " + typeof Infinity);
+
+        //Hexadecimal 
+
+        //let x = 0xFF; //255
+
+        //JavaScript Numbers as Objects
+        //Normally JavaScript numbers are primitive values created from literals:
+        let a = 123;
+        //But numbers can also be defined as objects with the keyword new:
+        let b = new Number(123);
+        let c = new Number(123);
+        console.log(a, b);
+        document.write("<br><br> a = 123 ,  b = new Number(123), c = new Number(123) => " + a + " and " + b);
+        document.write("<br><br> a = 123 type of a: => " + typeof a);
+        document.write("<br><br> b = new Number(123) type of b: => " + typeof b);
+        document.write("<br><br> When using the == operator, a and b are equal: " + (a==b));
+        document.write("<br><br> When using the === operator, a and b are not equal: " + (a===b));
+        document.write("<br><br> b = new Number(123), c = new Number(123)  JavaScript objects cannot be compared : b==c " + (b==c));
+        document.write("<br><br> b = new Number(123), c = new Number(123)  JavaScript objects cannot be compared : b===c " + (b===c));
+
+
+
+        //Note the difference between (x==y) true and (x===y) false
+
+        //When using the == operator, x and y are equal:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

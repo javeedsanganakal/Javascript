@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Number methods help you work with numbers.
+        //Primivite values dont have properties and methods bcz they r not objects
+
+        // 1. But with JavaScript, methods and properties are also available 
+        //    to primitive values, because JavaScript treats primitive
+        //    values as objects when executing methods and properties.
+
+        //toString() Method
+
+        let x = 123;
+
+        document.write("<br><br> Number to string by using toString()  let x = 123 => " + x.toString());
+        document.write("<br><br> Number to string by using toString()  (123).toString()=> " + (123).toString());
+        document.write("<br><br> Number to string by using toString()  (120+3).toString()=> " + (120+3).toString());
+
+
+
+
+        //toExponential() Method
+        document.write("<br><br> toExponential() Method let x = 123; =>  x.toExponential() => " + x.toExponential());
+        document.write("<br><br> toExponential() Method let x = 123; =>  x.toExponential(4) => " + x.toExponential(4));
+
+        //The toFixed() Method
+        // 1. The toFixed() method rounds a number to a given number of digits.
+        let x1 = 9.91;
+        document.write("<br><br> toFixed() Method let x1 = 9.91; =>  x1.toFixed(0) => " + x1.toFixed());
+        document.write("<br><br> toFixed() Method let x1 = 9.91; =>  x1.toFixed(2) => " + x1.toFixed(2));
+        document.write("<br><br> toFixed() Method let x1 = 9.91; =>  x1.toFixed(4) => " + x1.toFixed(4));
+
+
+        //The toPrecision()
+        //The toPrecision() method returns a string, with a number written with a specified length:
+let p = 2.38709;
+ document.write("<br><br> Number written with a specified length: let p = 2.38709 ==> p.toPrecision() => " + p.toPrecision());
+ document.write("<br><br> Number written with a specified length: let p = 2.38709 ==> p.toPrecision(2) => " + p.toPrecision(2));
+ document.write("<br><br> Number written with a specified length: let p = 2.38709 ==> p.toPrecision(3) => " + p.toPrecision(3));
+ document.write("<br><br> Number written with a specified length: let p = 2.38709 ==> p.toPrecision(4) => " + p.toPrecision(4));
+
+
+
+
+
+
+
+        
+
+
+
+
+
+ 
+    </script>
+</body>
+
+</html>

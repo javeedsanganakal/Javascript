@@ -1,49 +1,56 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Document</title> 
-  </head>
-  <body>
-    <script>
 
-// JavaScript strings are for storing and manipulating/operate text.
-let carName1 = "Volvo XC60";  // Double quotes
-let carName2 = 'Volvo XC60';  // Single quotes
-let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-let length = text.length;
+<head>
+  <title>Document</title>
+</head>
 
-// let text = "We are the so-called "Vikings" from the north."; 
-let text = "We are the so-called 'Vikings' from the north."; // or
+<body>
+  <script>
 
-let text = "We are the so-called \"Vikings\" from the north."; // "We are the so-called "Vikings" from the north."
-let text= 'It\'s alright.'; //'It's alright.';
-let text = "The character \\ is called backslash."; //"The character \ is called backslash.";
+    // JavaScript strings are for storing and manipulating/operate text.
+    let carName1 = "Volvo XC60";  // Double quotes
+    let carName2 = 'Volvo XC60';  // Single quotes
+    let text5 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let length = text5.length;
 
+    // let text = "We are the so-called "Vikings" from the north."; 
+    let text9 = "We are the so-called 'Vikings' from the north."; // or
 
-// You can also break up a code line within a text string with a single backslash:
-
-document.getElementById("demo").innerHTML = "Hello " +
-"Dolly!"; // or 
-
-document.getElementById("demo").innerHTML = "Hello \
-Dolly!";
+    let text6 = "We are the so-called \"Vikings\" from the north."; // "We are the so-called "Vikings" from the north."
+    let text7 = 'It\'s alright.'; //'It's alright.';
+    let text8 = "The character \\ is called backslash."; //"The character \ is called backslash.";
 
 
+    // You can also break up a code line within a text string with a single backslash:
 
-// JavaScript Strings as Objects
+    // document.getElementById("demo").innerHTML = "Hello " +
+    // "Dolly!"; // or 
 
-//Normally, JavaScript strings are primitive values
-//In JavaScript, a primitive (primitive value, primitive data type) is data that is not an object and has no methods or properties.
+    // document.getElementById("demo").innerHTML = "Hello \
+    // Dolly!";
 
 
-let nameStr = "Javeed";
 
-//But strings can also be defined as objects with the keyword new:
-let nameObj =  new String("Javeed");
+    // JavaScript Strings as Objects
 
-document.write("<br><br> type of string and Object " + typeof nameObj == typeof nameStr); 
-    </script>
-  </body>
+    //Normally, JavaScript strings are primitive values
+    //In JavaScript, a primitive (primitive value, primitive data type) is data that is not an object and has no methods or properties.
+
+
+    let nameStr = "Javeed";
+
+    //But strings can also be defined as objects with the keyword new:
+    let nameObj = new String("Javeed");
+
+    document.write("<br><br> type of nameStr =>" + (typeof nameStr));
+    document.write("<br><br> type of nameObj =>" + (typeof nameObj));
+
+    document.write("<br><br> type of string and Object =>" + (typeof nameObj == typeof nameStr));
+    document.write("<br><br> values of  string and Object by using '==' operator =>" + (nameObj == nameStr));
+    document.write("<br><br> values of  string and Object by using '===' operator =>" + (nameObj === nameStr));
+
+  </script>
+</body>
+
 </html>
-

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="demo"></p>
+    <script>
+
+        //Back Ticks
+        let backTicksTxt = `Hello World!!`;
+        document.write('<br><br> Template Literals use back-ticks (``) rather than the quotes ("") to define a string: => ' + backTicksTxt);
+
+        // Quotes Inside Strings
+
+        let text = `He's often called "Johnny"`;
+        document.write('<br><br> With template literals, you can use both single and double quotes inside a string: ' + text);
+        let mulText =
+            `The quick
+             brown fox
+             jumps over
+             the lazy dog`;
+        document.write('<br><br> Template literals allows multiline strings: ' + mulText);
+
+        //         Interpolation
+        // Template literals provide an easy way to interpolate variables and expressions into strings.
+
+        // The method is called string interpolation.
+
+        // The syntax is: ${exp/var}
+
+        let firstName = "Mohammad Javeed";
+        let lastName = 'Sanganakal';
+
+        let interpolationResult = `Welcome Mr. ${firstName}  ${lastName}`;
+        document.write('<br><br> Automatic replacing of expressions with real values is called string interpolation. ' + interpolationResult);
+
+
+
+
+
+        // HTML Templates
+        let header = "Browser";
+        let listOfBrowsers = ["Google", "Edge", "Opera", "Safari", "Firefox"];
+        let html = `<h1>${header}</h1><ol>`;
+
+        for (i = 0; i < listOfBrowsers.length; i++) {
+            html += `<li>${listOfBrowsers[i]}</li>`;
+        }
+        html += `</ol>`;
+        document.getElementById("demo").innerHTML = html;
+    </script>
+</body>
+
+</html>

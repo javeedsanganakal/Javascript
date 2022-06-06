@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title> 
+  </head>
+  <body>
+    <script>
+     // Array - the are the one who hold multiple values
+     const God = ['Blessings', 'Grace', 'Joy', 'Love', 'Faithfulness'];
+
+     document.write("<br><br>  Given Array => "+ God);
+     God.push("Prayer");
+
+     document.write("<br><br>  push 'Prayer' item into the Array => "+ God);
+     God.pop();
+     document.write("<br><br>  pop means remove last item  from the Array => "+ God);
+
+     God.unshift("Love");
+     document.write("<br><br>  unshift 'Love'  into the Array => "+ God);
+
+     God.shift();
+     document.write("<br><br>  shift means remove first item  from the Array => "+ God);
+
+     document.write("<br><br>  Slice means get  exact item   from the Array => "+ God.slice(1,2));
+
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+<!-- // Array - the are the one who hold multiple values
+const God = ['Blessings', 'Grace', 'Joy', 'Love', 'Faithfulness'];
+
+console.log(God[4]);
+// God.push('ominpresent');
+// God.push(1);
+// console.log(God);
+
+// God.pop();
+// console.log(God);
+// God.unshift('Sovergin');
+// console.log(God);
+God.shift();
+console.log(God);
+
+//slice method in array
+var x = God.slice(2,3);  //(initail index, [last index-1])
+console.log(x); -->
