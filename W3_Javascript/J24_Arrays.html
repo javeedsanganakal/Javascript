@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>An array is a special variable, which can hold more than one value:</h3>
+    <script>
+    const cars = ["KIA", "Volvo", "BMW"];
+    let car = cars[0];
+    cars[1] = "Ferrari";
+
+    const cars1 = [
+  "Saab",
+  "Volvo",
+  "BMW"
+];
+
+    //You can also create an array, and then provide the elements:
+    const emptyArray = [];
+    emptyArray[0] = 12;
+    emptyArray[1] = 15;
+    emptyArray[2] = 20;
+
+    //By using new keyword declare a array
+    const fruits = new Array("apple", "mango", "grapes");
+
+    //Access the full array
+    document.write("<br><br> Display the Array items =>  " + cars);
+
+    //Array are objects
+    document.write("<br><br> typeof cars Array =>  " + typeof cars);
+
+    //length of an array
+    document.write("<br><br> cars.length of an Array =>  " + cars.length);
+
+
+    document.write("<br><br> Given Array items =>  " + cars);
+    cars.push("TATA"); // add an elemenent at the end 
+    document.write("<br><br>  cars.push('TATA') add an elemenent at the end =>  " + cars);    
+    cars.pop(); //remove element from the end
+    document.write("<br><br> cars.pop() remove element from the end =>  " + cars);
+    cars.unshift("Tesla"); // add a item starting
+    document.write("<br><br> cars.unshift('Tesla')  add a item starting =>  " + cars);
+    cars.shift(); // remove starting element
+    document.write("<br><br> cars.shift()  remove starting element =>  " + cars);
+
+    cars[6] = "TOYOTA";
+    //Adding elements with high indexes can create undefined "holes" in an array.
+    document.write("<br><br> cars[6] = 'TOYOTA' ; Adding elements with high indexes can create undefined 'holes' in an array. =>  " + cars);
+
+
+
+
+
+    </script>
+</body>
+
+</html>
