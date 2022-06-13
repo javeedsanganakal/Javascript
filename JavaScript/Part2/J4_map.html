@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>map function</title>
+</head>
+
+<body>
+    <script>
+
+const  companies = [
+    {name:"jackwilliam1", company: "ocwen outsourcing1", startdate:1991, endDate: 1998},
+    {name:"jackwilliam2", company: "ocwen outsourcing2", startdate:1992, endDate: 1999},
+    {name:"jackwilliam3", company: "ocwen outsourcing3", startdate:1993, endDate: 2000},
+    {name:"jackwilliam4", company: "ocwen outsourcing4", startdate:1994, endDate: 2001},
+    {name:"jackwilliam5", company: "ocwen outsourcing5", startdate:1995, endDate: 2002},
+    {name:"jackwilliam6", company: "ocwen outsourcing5", startdate:1996, endDate: 2003},
+    {name:"jackwilliam7", company: "ocwen outsourcing4", startdate:1997, endDate: 2004},
+    {name:"jackwilliam8", company: "ocwen outsourcing2", startdate:1998, endDate: 2005},
+    {name:"jackwilliam9", company: "ocwen outsourcing1", startdate:1999, endDate: 2006},
+];
+
+const ages =[33,22,11,44,55,66,44,77,88,99,77,75,24,56,14,23,67,55];
+
+
+//syntax:
+// const result = arrayName.map((x) => {return x.arrayElement});
+document.write("<br><br> Map : It is used as iterator to get elements from the array: => ");
+const companNames  = companies.map( (x) => {return x.company});
+console.log(companNames);
+//(9) ['ocwen outsourcing1', 'ocwen outsourcing2', 'ocwen outsourcing3', 'ocwen outsourcing4', 'ocwen outsourcing5', 'ocwen outsourcing5', 'ocwen outsourcing4', 'ocwen outsourcing2', 'ocwen outsourcing1']
+
+
+
+const x = companies.map(x => {return 1});
+console.log(x);
+//(9) [1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+const y = companies.map(x => { return `${x.name} started working in the company from ${x.startdate} to ${x.endDate}`});
+console.log(y);
+
+
+const z = ages.map(x => {return x*2});
+console.log(z);
+//(18) [66, 44, 22, 88, 110, 132, 88, 154, 176, 198, 154, 150, 48, 112, 28, 46, 134, 110]
+
+
+
+
+
+
+ 
+    </script>
+</body>
+
+</html>
+
+
+
+
+<!-- //-------------------------------------------------maps
+
+
+//syntax const Y = array.map(function(x){ return ------x.arrayElement------  });
+// const Y = array.map( x => X.arrayElement);
+
+
+// const y = companies.map(function(x){ return x.company});
+// console.log(y)
+;
+
+// const z = companies.map(function(x){ return 1});
+// console.log(z);
+
+// const y = companies.map(x=> `${x.name} started working at ${x.startdate} still ${x.endDate}`);
+// console.log(y);
+
+// const m = ages.map(x => x*2);
+// const m = ages.map(function(x){return x*2});
+// console.log(m); -->
+
+
+
+
+
+
+
+<!-- const  companies = [
+    {name:"jackwilliam1", company: "ocwen outsourcing1", startdate:1991, endDate: 1998},
+    {name:"jackwilliam2", company: "ocwen outsourcing2", startdate:1992, endDate: 1999},
+    {name:"jackwilliam3", company: "ocwen outsourcing3", startdate:1993, endDate: 2000},
+    {name:"jackwilliam4", company: "ocwen outsourcing4", startdate:1994, endDate: 2001},
+    {name:"jackwilliam5", company: "ocwen outsourcing5", startdate:1995, endDate: 2002},
+    {name:"jackwilliam6", company: "ocwen outsourcing5", startdate:1996, endDate: 2003},
+    {name:"jackwilliam7", company: "ocwen outsourcing4", startdate:1997, endDate: 2004},
+    {name:"jackwilliam8", company: "ocwen outsourcing2", startdate:1998, endDate: 2005},
+    {name:"jackwilliam9", company: "ocwen outsourcing1", startdate:1999, endDate: 2006}
+
+];
+
+  
+
+const ages =[33,22,11,44,55,66,44,77,88,99,77,75,24,56,14,23,67,55];
+
+
+//---------------------------------------------------forEach   
+
+// General method and using for each.
+// for (var i=2; i< companies.length;  i++){ 
+//     console.log(companies[i]);
+// }
+
+// syntax      array.forEach(function(x)=> {    console.log(x/x.arrayElement);});
+// companies.forEach(function(x){
+//     console.log(x)
+// });
+// companies.forEach(function(x){console.log(x.company)});
+
+// syntax of arrow function is ()=>{};
+
+//  companies.forEach(   (x)=> {console.log(x.endDate)}     );
+
+// var details1 = companies.forEach(function(x){
+//     console.log(x.endDate);
+// });
+
+
+
+
+//---------------------------------------------------filters
+
+//General method and using and using filters method
+
+// *********Tradition method****
+// var canDrink = [];
+// for(i=0; i< ages.length; i++){
+//     if(ages[i] >= 22) {canDrink.push(ages[i]);};
+    
+// console.log(canDrink);
+// };
+// console.log(canDrink);
+
+// syntax   const Y = array.filter(function(x){    if(x.arrayelement){return true}   });
+
+// var canDrinkDrive = ages.filter(function(x){  
+//     if(x>=21){ return true; }
+//       });
+// var canDrinkDrive = ages.filter(x=> (x>=21) );
+// console.log(canDrinkDrive);
+// console.log(canDrink);
+
+
+// const y =companies.filter(function(x){
+//     if(x.company === 'ocwen outsourcing2' ){ return true }
+// });
+// const y =companies.filter(x => 
+//     x.company === 'ocwen outsourcing2'
+// );
+
+// console.log(y)
+;
+
+
+// const y = companies.filter(x=>(x.startdate>=1995 && x.startdate<1998));
+// console.log(y)
+;
+
+//-------------------------------------------------maps
+
+
+//syntax const Y = array.map(function(x){ return ------x.arrayElement------  });
+// const Y = array.map( x => X.arrayElement);
+
+
+// const y = companies.map(function(x){ return x.company});
+// console.log(y)
+;
+
+// const z = companies.map(function(x){ return 1});
+// console.log(z);
+
+// const y = companies.map(x=> `${x.name} started working at ${x.startdate} still ${x.endDate}`);
+// console.log(y)
+;
+
+// const m = ages.map(x => x*2);
+// const m = ages.map(function(x){return x*2});
+// console.log(m);
+
+//-------------------------------------------------sort
+// const X = array.sort((a,b) =>a-b/b-a );  syntax 
+// const t = companies.sort(function(a,b){ 
+//         if(a.startdate <b.endDate){ return  -1 }
+//         else{return 1}
+// });
+// console.log(t);
+ 
+// ternary operator   (condition)?(true ):(false)   syntax
+// const t = companies.sort((a,b)=>{(a.startdate<b.endDate) ? -1 : 1});
+// console.log(t);
+
+
+// const h = ages.sort((a,b)=> a-b); //assending
+// const h = ages.sort((a,b)=> b-a);  //desending
+// console.log(h); -->
+
+
+<!-- 
+HIGHER ORDER ARRAY METHODS
+1. forEach -
+   It is used to get complete array or a particular element out of a array 
+   syntax =>      
+array.forEach(function(x)=> {    console.log(x/x.arrayElement);
+});
+
+
+2. filter - 
+   it is used to find greater , lesser, equal.
+   filter(arrayElement, index, fullarray);
+  
+
+
+   const Y = array.filter(function(x){    if(x.arrayelement){return true}   });   -----------javascript method
+   const Y = array.filter(x => x.arrayelement === or >= "");
+
+3.Maps -
+it is similiar to filters but uses array definition inside the function.
+mathemetical operations can also be done in it. It is used as a iterator, used to store some value.It does 
+not change the original array it just creates a new array.
+const Y = array.map(function(x){ return ------x.arrayElement------  });
+const Y = array.map( x => X.arrayElement);
+
+4.Sort - it is basically meant to sort from assend to desend or desend to assend
+const X = array.sort((a,b) =>a-b/b-a );
+cosnt X = array.sort(function(a,b){
+	if(c1.arrayElement > c2.arrayElement{return 1}
+	else{return -1}
+	});
+const X = array.sort((a,b)=>(a.start > b.start : 1: -1)); -->

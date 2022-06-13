@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //JS method toString() converst an array into an , seprated values in a string
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        console.log(fruits.toString());
+
+
+        //JS method join() is same as toString(), but here we can specify the separator as an param
+        const fruitsJn = ["Banana", "Orange", "Apple", "Mango"];
+        console.log(fruitsJn.join("*"));
+        console.log(fruitsJn.join("/"));
+
+
+        //push, pop, unshift, shift methods
+
+        //Concatenation of two arrays;
+        //Syntax: arr1.concat(arr2, arr3, ......);
+        // concat() method creates an new array by merging the existing arrays
+
+        const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+const extra = ["Rocky, Jolly"];
+// const myChildren = myGirls.concat(myBoys);
+// const myChildren = myGirls.concat("john");
+const myChildren = myGirls.concat(myBoys,extra);
+console.log(myChildren);
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

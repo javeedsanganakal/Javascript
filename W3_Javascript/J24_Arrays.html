@@ -49,11 +49,32 @@
 
     cars[6] = "TOYOTA";
     //Adding elements with high indexes can create undefined "holes" in an array.
-    document.write("<br><br> cars[6] = 'TOYOTA' ; Adding elements with high indexes can create undefined 'holes' in an array. =>  " + cars);
+    document.write("<br><br> cars[6] = 'TOYOTA' ; Adding elements with high indexes can create undefined or empty 'holes' in an array. =>  " + cars);
+
+// Associative Arrays
+// Many programming languages support arrays with named indexes
+// Arrays with named indexes are called associative arrays (or hashes)
+// JavaScript does not support arrays with named indexes.
+// In JavaScript, arrays always use numbered indexes. 
 
 
 
+// The Difference Between Arrays and Objects
+// In JavaScript, arrays use numbered indexes.  
 
+// In JavaScript, objects use named indexes.
+
+
+const arr1 = new Array();
+const arr2 = [];
+
+const arr3 = new Array(20,30,405,12,23,56);
+const arr4 = [23,4,56,67,86,44,21];
+
+
+
+// isArray() method
+document.write("<br><br> Array.isArray(cars)  check its an array or not =>  " + Array.isArray(cars));
 
     </script>
 </body>
