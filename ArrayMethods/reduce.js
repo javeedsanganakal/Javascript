@@ -10,7 +10,6 @@ const numbers = [2, 3, -1, 4];
 // console.log(sum2);
 
 //reduce
-
 //a = 2; c =3 => a =5
 //a = 5; c = -1=> a =4;
 //a = 4; c = 4 => a = 8;
