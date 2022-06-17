@@ -5,10 +5,12 @@ const numbers = [2, 4, 5, 7, 8, 9 ];
 numbers.forEach(item => console.log(item));
 
 
+console.clear();
 
 sum = 0;
-numbers.forEach(item => sum+=item);
+const res = numbers.forEach(item => sum+=item);
 console.log(sum);
+// console.log(numbers);
 
 
 
