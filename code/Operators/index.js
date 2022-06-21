@@ -104,7 +104,7 @@ console.log(!eligibleForLoan);
 
 
 
-// 8. Logical Operators with Non-Booleans
+// 8. Logical Operators with Non-Boolean
 
 
 
